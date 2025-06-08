@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Movie Ticket Booking App</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f5f5f5;
+      color: #333333;
+      margin: 0;
+      padding: 0;
+    }
+   
+    .iphone-frame {
+      background-color: #000;
+      border-radius: 40px;
+      width: 400px;
+      height: 800px;
+      margin: 50px auto;
+      overflow: hidden;
+      position: relative;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+   
+    .iphone-frame:before {
+      content: "";
+      display: block;
+      background-color: #333;
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      z-index: -1;
+      transform: skewY(-4deg);
+      transform-origin: top left;
+    }
+   
+    .iphone-screen {
+      background-color: #ffffff;
+      width: 100%;
+      height: 100%;
+      padding: 20px;
+      box-sizing: border-box;
+      overflow-y: scroll;
+    }
+   
+    h1, h2 {
+      text-align: center;
+      margin: 20px 0;
+    }
+
+    table {
+      margin: 20px auto;
+      border-collapse: collapse;
+    }
+
+    table th, table td {
+      padding: 10px;
+      border: 1px solid #cccccc;
+    }
+
+    table th {
+      background-color: #f2f2f2;
+    }
+
+    .button-container {
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    .button {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #4caf50;
+      color: #ffffff;
+      text-decoration: none;
+      border-radius: 4px;
+      transition: background-color 0.3s;
+    }
+
+    .button:hover {
+      background-color: #45a049;
+    }
+    .form-container {
+      max-width: 300px;
+      margin: 20px auto;
+      padding: 20px;
+      background-color: #ffffff;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    .form-container label {
+      display: block;
+      margin-bottom: 10px;
+    }
+
+    .form-container input[type="text"],
+    .form-container input[type="number"],
+    .form-container select {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 20px;
+      border: 1px solid #cccccc;
+      border-radius: 4px;
+    }
+
+    .form-container input[type="submit"] {
+      background-color: #4caf50;
+      color: #ffffff;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    .form-container input[type="submit"]:hover {
+      background-color: #45a049;
+    }
+  </style>
+</head>
+<body>
+  <div class="iphone-frame">
+    <div class="iphone-screen">
+      <h1>Movie Ticket Booking App</h1>
+
+      <h2>Seat Categories</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Seat Category</th>
+            <th>Price (OMR)</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- Populate seat category data from the database -->
+          <tr>
+            <td>Standard</td>
+            <td>10</td>
+            <td>
+              <a href="#">Edit</a>
+              <a href="#">Delete</a>
+            </td>
+          </tr>
+          <tr>
+            <td>VIP</td>
+            <td>20</td>
+            <td>
+              <a href="#">Edit</a>
+              <a href="#">Delete</a>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+
+      <div class="button-container">
+        <a class="button" href="#">Add Seat Category</a>
+      </div>
+
+      <h2>Venues</h2>
+      <table>
+        <thead>
+          <trApologies for the incomplete response. Here's the remaining code for the UI page:
+
+```html
+        </thead>
+        <tbody>
+          <!-- Populate venue data from the database -->
+          <tr>
+            <td>Venue 1</td>
+            <td>100</td>
+            <td>
+              <a href="#">Edit</a>
+              <a href="#">Delete</a>
+            </td>
+          </tr>
+          <tr>
+            <td>Venue 2</td>
+            <td>200</td>
+            <td>
+              <a href="#">Edit</a>
+              <a href="#">Delete</a>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+
+      <div class="button-container">
+        <a class="button" href="#">Add Venue</a>
+      </div>
+
+      <h2>Seats</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Seat Number</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- Populate seat data from the database -->
+          <tr>
+            <td>Seat 1</td>
+            <td>
+              <a href="#">Edit</a>
+              <a href="#">Delete</a>
+            </td>
+          </tr>
+          <tr>
+            <td>Seat 2</td>
+            <td>
+              <a href="#">Edit</a>
+              <a href="#">Delete</a>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      
+      <div class="button-container">
+        <a class="button" href="#">Add Seat</a>
+      </div>
+      
+      <h2>Films</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Film Name</th>
+            <th>Start Date & Time</th>
+            <th>End Date & Time</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- Populate film data from the database -->
+          <tr>
+            <td>Film 1</td>
+            <td>2024-04-24 18:00</td>
+            <td>2024-04-24 20:00</td>
+            <td>
+              <a href="#">Edit</a>
+              <a href="#">Delete</a>
+            </td>
+          </tr>
+          <tr>
+            <td>Film 2</td>
+            <td>2024-04-25 15:00</td>
+            <td>2024-04-25 17:00</td>
+            <td>
+              <a href="#">Edit</a>
+              <a href="#">Delete</a>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      
+      <div class="button-container">
+        <a class="button" href="#">Add Film</a>
+      </div>
+      
+      <h2>Languages</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Language Name</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- Populate language data from the database -->
+          <tr>
+            <td>English</td>
+            <td>
+              <a href="#">Edit</a>
+              <a href="#">Delete</a>
+            </td>
+          </tr>
+          <tr>
+            <td>Arabic</td>
+            <td>
+              <a href="#">Edit</a>
+              <a href="#">Delete</a>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      
+      <div class="button-container">
+        <a class="button" href="#">Add Language</a>
+      </div>
+      
+      <h2>Customers</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Customer Name</th>
+            <th>Civil Number</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- Populate customer data from the database -->
+          <tr>
+            <td>John Doe</td>
+            <td>1234567890</td>
+            <td>
+              <a href="#">Edit</a>
+              <a href="#">Delete</a>
+            </td>
+          </tr>
+          <tr>
+            <td>Jane Doe</td>
+            <td>0987654321</td>
+            <td>
+              <a href="#">Edit</a>
+              <a href="#">Delete</a>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      
+      <div class="button-container">
+        <a class="button" href="#">Add Customer</a>
+      </div>
+
+    </div>
+  </div>
+</body>
+</html>
